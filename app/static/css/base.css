@@ -1,0 +1,103 @@
+.main {
+    /* fallback for old browsers */
+    background: #5c5f66;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(92, 95, 102, 0.5), rgba(50, 58, 73, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(92, 95, 102, 0.5), rgba(50, 58, 73, 0.5))
+  }
+  html * {
+    font-family: sans-serif;
+    color: #243a37;
+  }
+  .navbar-default{
+    margin-bottom: 0px;
+  }
+  
+  h1{
+    
+    color:#111616;
+    font-family: 'Shadows Into Light', ;
+  }
+  h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #1c2423 ;
+    text-align: center;
+    font-family: 'Shadows Into Light', ;
+    font-weight: bold;
+  }
+  
+  #section_name{
+    padding-top: 50px;
+    background-image: url('../images/photo2.jpg');
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  #submit{
+    background-color: #758583;
+    height:30px;
+    width:100%;
+    color: white;
+    
+  }
+  
+  .header_name img{
+    height: 300 em;
+    opacity: 0.9;
+  }
+  
+  .header_name h4{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Shadows Into Light', ;
+    color: black;
+    font-size: 80px;
+    size: 300px;  
+  }
+  
+  .newtask{
+    padding-bottom: 50px;
+    width: 40%;
+    
+  }
+  .listask
+  {
+    border-top-style: solid;
+    border-color: gray;
+    background-image: url('../images/414048-PDYEO7-221.jpg');
+  }
+  .list-group-item{
+    background-color: transparent;
+  }
+  
+  h6{
+    font-family: 'Shadows Into Light', ;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .buttons_form{
+   
+  }
+  .description_text{
+   color: black; 
+  }
+  p
+  { 
+    color:#00DFC0;
+  }
+  
+  .listask .btn_update #submit{
+    width: 70%;
+    background-color: #FF7F50;
+  }
+  
+  .listask .btn_delete #submit{
+    width: 70%;
+    background-color:#FF6347;
+  }

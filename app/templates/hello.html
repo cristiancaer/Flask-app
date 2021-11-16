@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+{% import  'bootstrap/wtf.html' as wtf%}
+{% block title %}
+    {{super()}}
+    Welcome
+{% endblock title %}
+{% block content %}
+    <div class="container " >
+        <div class=" row">
+            <div class="col-sm-3 container header_name text-center ">
+                <h1>Welcome {{user}}</h1>
+                <img src="/static/images/work.gif" alt="image" class="image" width="200 em">
+            </div>
+            <div class="col-sm-7">
+                <div class=' newtask center'>
+                    <h1>To-DO list</h1>
+                    {{wtf.quick_form(log)}}
+                </div>
+                <div class=" container row">
+                    {% if tasks %}
+                    <div class="col-lg-2 text-center col-md-2 col-sm-2 col-xs-2">
+                        <h6>task</h6>
+                    </div>
+                    <div class="col-lg-2 text-center col-md-2 col-sm-2  col-xs-2">
+                        <h6>Done ?</h6>
+                    </div>
+                    <div class="col-lg-2 text-center col-md-2 col-sm-2  col-xs-2">
+                        <h6> Change status?</h6>
+                    </div>
+                    <div class="col-lg-2 text-center col-md-2 col-sm-2  col-xs-2">
+                        <h6> Delete task ?</h6>
+                    </div>
+                   
+                </div>
+
+                    <ul>
+                    {% for task in tasks %}
+                        {{macros.render_task(task,delete_form,update_task_form)}}
+                    {%endfor%}  
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
